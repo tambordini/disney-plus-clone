@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import LogoImage from '../../assets/images/logo.svg'
-import styles from './index.module.scss'
+import './index.scss'
 
 const Hamburger = (): React.ReactElement => {
   return (
-    <div id="btn-hamburger" className={styles.btn__hamburger}>
-      <div className={styles.icon__wrapper}>
-        <span className={styles.line}></span>
-        <span className={styles.line}></span>
-        <span className={styles.line}></span>
+    <div id="btn-hamburger" className="btn__hamburger">
+      <div className="icon__wrapper">
+        <span className="line"></span>
+        <span className="line"></span>
+        <span className="line"></span>
       </div>
     </div>
   )
@@ -17,10 +17,10 @@ const Hamburger = (): React.ReactElement => {
 
 const Logo = (): React.ReactElement => {
   return (
-    <div className={styles.nav__logo}>
+    <div className="nav__logo">
       <Link to="/" target="">
         <img
-          className={styles.brand__logo}
+          className="brand__logo"
           src={LogoImage}
           alt="Disney+&nbsp;Hotstar"
         />
@@ -55,17 +55,13 @@ const Navigation = (): React.ReactElement => {
   ]
 
   return (
-    <div className={styles.navigations} role="navigation">
+    <div className="navigations" role="navigation">
       <ul>
         {navigationItems.map((item) => (
           <li key={item.label}>
-            <div className={styles.dropdown__container}>
-              <Link className={styles.nav__link} to={item.to} target="">
-                <div
-                  className={
-                    item.isKid ? `${styles.iconClass} ${styles.kids}` : ''
-                  }
-                >
+            <div className="dropdown__container">
+              <Link className="nav__link" to={item.to} target="">
+                <div className={item.isKid ? 'iconClass kids' : ''}>
                   {item.label}
                 </div>
               </Link>
@@ -79,10 +75,10 @@ const Navigation = (): React.ReactElement => {
 
 const Header = (): React.ReactElement => {
   return (
-    <div className={styles.header__container}>
-      <div className={styles.static__container}>
-        <div className={`${styles.header} ${styles.fixed__header}`}>
-          <div className={styles.nav__container}>
+    <div className="header__container">
+      <div className="static__container">
+        <div className="header fixed__header}`">
+          <div className="nav__container">
             <Hamburger />
             <Logo />
             <Navigation />
