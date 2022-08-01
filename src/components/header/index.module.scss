@@ -1,5 +1,3 @@
-.header__container {
-}
 .static__container {
   min-height: 80px;
 }
@@ -27,12 +25,103 @@
     margin: 0 auto;
     margin-top: 6px;
     min-height: 66px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+
+    .btn__hamburger {
+      cursor: pointer;
+    }
+
+    .navigations {
+      position: relative;
+    }
   }
+}
+.btn__hamburger {
+  .icon__wrapper {
+    position: relative;
+    padding: 20px;
+    margin-left: -10px;
+
+    .line {
+      width: 18px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.6);
+      display: block;
+    }
+    .line:nth-child(2) {
+      margin-top: 3px;
+      margin-bottom: 3px;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    }
+  }
+}
+.nav__logo {
+  cursor: pointer;
+
+  .brand__logo {
+    padding-bottom: 7px;
+  }
+}
+.navigations {
+  margin: 0;
+  display: inline-block;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    li {
+      display: inline-block;
+
+      .nav__link {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: none;
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        padding: 20px 15px 20px;
+        line-height: normal;
+      }
+
+      .kids {
+        position: relative;
+        bottom: -2px;
+      }
+    }
+  }
+}
+.dropdown__container {
+  border-bottom: 0 solid #334336;
+}
+.iconClass.kids,
+.iconClass.exit__kids {
+  width: 40px;
+  height: 15px;
+  background: url('../../assets/images/kids.svg') no-repeat;
+}
+.iconClass {
+  background: url('../../assets/images/exit_kids.svg') no-repeat;
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1190px) {
@@ -41,5 +130,42 @@
       padding: 0 10px;
       max-width: 100%;
     }
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1099px) {
+  .navigations {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navigations {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1098px) {
+  .nav__logo .brand__logo {
+    width: 115px;
+    height: 45px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .navigations ul li .nav__link {
+    font-size: 18px;
+  }
+  .nav__logo .brand__logo {
+    width: 135px;
+    height: 53px;
+    padding-bottom: 12px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .navigations ul li .nav__link {
+    font-size: 18px;
+  }
+  .nav__logo .brand__logo {
+    width: 162px;
+    height: 62px;
+    padding-bottom: 14px;
   }
 }

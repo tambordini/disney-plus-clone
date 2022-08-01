@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,4 +16,35 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  outline: 0;
+  color: #1f80e0;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+a img,
+object,
+embed {
+  outline: none;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+ul {
+  padding: 0;
+}
+ul,
+p {
+  font-size: 14px;
+  margin: 0;
 }
