@@ -1,0 +1,52 @@
+.no__page {
+  min-height: calc(100vh - 57px);
+  position: relative;
+  top: 57px;
+
+  .error__wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+.error__wrapper {
+  text-align: center;
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .info {
+    font-size: 14px;
+  }
+}
+.television {
+  background: url('../../assets/images/television.png') center center no-repeat;
+  display: inline-block;
+  width: 330px;
+  height: 330px;
+}
+.home__btn,
+.home__btn:hover,
+.home__btn:visited,
+.home__btn:focus {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  color: #1f80e0;
+  padding: 17px 77px;
+  border: 1px solid #1f80e0;
+  border-radius: 2px;
+  display: block;
+  margin: 20px auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: transparent;
+  outline: none;
+}

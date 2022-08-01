@@ -1,13 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
+  background: linear-gradient(to bottom, #141b29, #0c111b 300px);
+  text-rendering: auto;
+  color: #fff;
+  font-size: 1.125em;
+  line-height: 1.42857143;
+  -webkit-font-smoothing: antialiased;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
