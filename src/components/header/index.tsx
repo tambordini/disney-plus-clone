@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import LogoImage from '../../assets/images/logo.svg'
-import './index.scss'
 
 const Hamburger = (): React.ReactElement => {
   return (
-    <div id="btn-hamburger" className="btn__hamburger">
-      <div className="icon__wrapper">
+    <div id="btn-hamburger" className="btn-hamburger">
+      <div className="icon-wrapper">
         <span className="line"></span>
         <span className="line"></span>
         <span className="line"></span>
@@ -17,10 +16,10 @@ const Hamburger = (): React.ReactElement => {
 
 const Logo = (): React.ReactElement => {
   return (
-    <div className="nav__logo">
+    <div className="nav-logo">
       <Link to="/" target="">
         <img
-          className="brand__logo"
+          className="brand-logo"
           src={LogoImage}
           alt="Disney+&nbsp;Hotstar"
         />
@@ -59,8 +58,8 @@ const Navigation = (): React.ReactElement => {
       <ul>
         {navigationItems.map((item) => (
           <li key={item.label}>
-            <div className="dropdown__container">
-              <Link className="nav__link" to={item.to} target="">
+            <div className="dropdown-container">
+              <Link className="nav-link" to={item.to} target="">
                 <div className={item.isKid ? 'iconClass kids' : ''}>
                   {item.label}
                 </div>
@@ -75,10 +74,10 @@ const Navigation = (): React.ReactElement => {
 
 const Header = (): React.ReactElement => {
   return (
-    <div className="header__container">
-      <div className="static__container">
-        <div className="header fixed__header}`">
-          <div className="nav__container">
+    <div className="header-container">
+      <div className="static-container">
+        <div className="header fixed-header}`">
+          <div className="nav-container">
             <Hamburger />
             <Logo />
             <Navigation />

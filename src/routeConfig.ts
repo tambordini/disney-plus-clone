@@ -11,5 +11,10 @@ export const routes: IRouteConfig[] = [
     key: 'landing',
     path: '/',
     component: React.lazy(() => import('./pages/landing/index'))
+  },
+  {
+    key: 'genres',
+    path: '/genres',
+    component: React.lazy(() => import('./pages/genres/index'))
   }
 ]

@@ -1,7 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import './index.scss'
 
 const FooterLeft = (): React.ReactElement => {
   const footerItems = [
@@ -28,7 +26,7 @@ const FooterLeft = (): React.ReactElement => {
   ]
 
   return (
-    <div className="footer__left col-xs-12 col-sm-12 col-sm-7">
+    <div className="footer-left col-xs-12 col-sm-12 col-sm-7">
       <ul>
         {footerItems.map((item) => (
           <li key={item.to}>
@@ -48,9 +46,9 @@ const FooterLeft = (): React.ReactElement => {
 
 const FooterRight = (): React.ReactElement => {
   return (
-    <div className="footer__right col-xs-12 col-sm-12 col-sm-5">
-      <div className="app__unit col-xs-8">
-        <div className="store__wrapper">
+    <div className="footer-right col-xs-12 col-sm-12 col-sm-5">
+      <div className="app-unit col-xs-8">
+        <div className="store-wrapper">
           <p>Disney+ Hotstar App</p>
           <Link
             className="playstore"
@@ -66,7 +64,7 @@ const FooterRight = (): React.ReactElement => {
           ></Link>
         </div>
       </div>
-      <div className="social__unit col-xs-4">
+      <div className="social-unit col-xs-4">
         <div>
           <p>Connect with us</p>
           <a
@@ -90,10 +88,10 @@ const FooterRight = (): React.ReactElement => {
 const Footer = (): React.ReactElement => {
   return (
     <div className="footer">
-      <Container>
+      <div className="container">
         <FooterLeft />
         <FooterRight />
-      </Container>
+      </div>
     </div>
   )
 }
