@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import NotFound from '../pages/404'
-import { routes } from '../routeConfig'
+import { routes } from '../configs/routeConfig'
 
 const Layout = (): React.ReactElement => {
   return (

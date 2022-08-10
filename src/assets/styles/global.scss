@@ -1,3 +1,4 @@
+@import '~bootstrap/scss/bootstrap';
 @import './bootstrap.scss';
 @import '_variable';
 
@@ -388,7 +389,6 @@ a {
 
     .app-unit {
       .store-wrapper {
-        float: right;
         display: inline-block;
         padding: 0 0 24px 30px;
       }
@@ -466,4 +466,27 @@ a {
   width: max-content;
   background-color: transparent;
   outline: none;
+}
+
+// Genres Component
+.container .content-holder {
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+
+  h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 26px 0 20px;
+    display: inline-block;
+    text-transform: none;
+    font-weight: 500;
+    color: $TEXT_COLOR_L1;
+  }
+
+  .card:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+    z-index: 4;
+  }
 }

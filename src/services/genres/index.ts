@@ -1,4 +1,4 @@
-import { instant } from '../../axiosConfig'
+import { instant } from '../../configs/axiosConfig'
 
 export interface IGenres {
   id: number
